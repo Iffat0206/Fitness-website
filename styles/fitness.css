@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*header part*/
+.orange{
+    color:rgba(230, 83, 60, 1);
+}
+.white{
+    color: white;
+}
+.orange-bg{
+    background-color: rgba(230, 83, 60, 1);
+}
+.border-2{
+    border: 1px solid black;
+    box-shadow: 0px 20px 25px black;
+}
+.bg-1{
+    background-color: #111111;
+    background: linear-gradient(to bottom, rgb(44, 44, 44),#111111);
+    background-blend-mode:luminosity;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.border{
+    width: 132px;
+    height: 43px;
+    font-size: 2.25rem;
+    font-weight: 750;
+}
+.nav ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 46px;
+    width: 465px;
+    height: 40px;
+    padding: 3px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    font-weight: 400;
+}
+.home{
+    width:100px;
+    height: 30px;
+    border-radius: 46px;
+    font-weight: 900;
+    padding-top: 15px;
+}
+.nav-link{
+    text-decoration: none;
+}
+.grey{
+    color: rgba(255, 255, 255, 0.5);
+}
+.banner{
+    display: flex;
+    
+    justify-content: center;
+    gap: 40px;
+}
+.banner-tittle{
+    font-size: 4.8rem;
+}
+.banner-content{
+    font-size: 0.8rem;
+    font-weight:lighter;   
+}
+.join-btn, .download-btn{
+    width: 224px;
+    height:54px;
+    border-radius: 42px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+}
+.download-btn{
+    background-color: #111111;
+    border: 1px solid white;
+}
+.details{
+    width: 599px;
+    height: 440px;
+}
+.poster{
+    width: 350px;
+    
+}
+.badge-btn{
+    width: 180px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    border-radius: 12px;
+}
+#videos{
+    /*margin-bottom: -105px;
+    margin-left: 260px;
+    margin-top: 140px;*/
+    transform: translateX(250px) translateY(155px);
+    background-color:rgba(76, 73, 73, 0.5);    
+    backdrop-filter: blur(2px);
+}
+img{
+    margin-top: -100px;
+    width: 100%;
+    height: 100%;
+}
+.tutorial{
+    /*margin-top: -150px;
+    margin-left: 50px;*/
+    transform: translateX(-100px) translateY(-150px);
+    background-color:rgba(76, 73, 73, 0.5);
+    backdrop-filter: blur(5px);
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 99px;
+}
+.heading{
+    
+    font-weight: 800;
+    height: 20px;
+}
+
+.badge-btn h1{
+    font-size: 2rem;
+}
+.badge-btn h3{
+    font-size: 1.5rem;
+}
