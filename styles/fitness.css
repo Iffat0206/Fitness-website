@@ -149,18 +149,18 @@ img{
     font-size: 1.5rem;
 }
 /*change habit*/
-.change-habit{
+.change-habit, .run-an-extra,.train-and-exercise{
     display: flex;
     justify-content: center;
     margin: 80px;
     padding: 10px;
     height: 652px;
+    margin-top: 0;
 }
 .habit-box{
     width: 1044px;
     text-align: center;
     display: grid;
-    
 }
 .habit-content{
     width: 680px;
@@ -184,3 +184,263 @@ img{
     width: 100%;
 }
 /*Run an extra*/
+.run-an-extra{
+    border: 1px solid rgba(230, 83, 60, 1);
+    height: 375px;
+}
+.extra-box{
+    display: flex;
+    justify-content: center;
+    width: 1060px;
+    height: 370px;
+    background-color: rgba(34, 34, 34, 1);
+}
+.box-content{
+    width: 50%;
+    padding-left: 50px;
+}
+.box-content button{
+    font-size: 1.12rem;
+    margin-top: 30px;
+}
+.box-content p{
+    font-size: 0.87rem;
+}
+.box-heading{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.box-image{
+    height: 19.5rem;
+    width:22.8rem ;
+    padding-top: 130px;
+    padding-left: 100px;
+    padding-right: 30px;
+}
+.box-image img{
+    height: 100%;
+    border-radius: 18px;
+}
+/*Training and exercise*/
+.train-and-exercise{
+    border: 1px solid khaki;
+    display: grid;
+}
+.train-content{
+    text-align: start;
+    width: 41.8rem;
+    height: 8.15rem;
+    /*border: 1px solid wheat;*/
+}
+.train-images{
+    grid-template-rows: auto auto;
+    width: 1060px;
+    height: 400px;
+    /*border: 3px solid darkcyan;*/
+    display: grid;
+}
+.row-1{
+    display: grid;
+    grid-template-columns: 15.6rem 33rem 16.4rem;
+}
+.row-2{
+    display: grid;
+    grid-template-columns: 26.5rem 16.5rem 22rem;
+}
+.image-1{
+    background-image: url(../images/exercise1.jpg);
+    background-size: cover;
+    grid-area: 1st;
+    position: relative;
+}
+.image-2{
+    background-image: url(../images/exercise2.png);
+    background-size: cover;
+    grid-area: 2nd;
+    position: relative;
+}
+.image-3{
+    background-image: url(../images/exercise3.png);
+    background-size: cover;
+    grid-area: 3rd;
+    position: relative;
+}
+.image-4{
+    background-image: url(../images/exercise4.png);
+    background-size: cover;
+    grid-area: 4th;
+    position: relative;
+}
+.image-5{
+    background-image: url(../images/exercise5.jpg);
+    background-size: cover;
+    grid-area: 5th;
+    position: relative;
+}
+.image-6{
+    background-image: url(../images/exercise6.jpg);
+    background-size: cover;
+    grid-area: 6th;
+    position: relative;
+}
+.over-1{
+    padding: 10px;
+    background-color: rgba(6, 255, 210, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.over-2{
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.over-3{
+    padding: 10px;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.over-4{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.over-5{
+    padding: 10px;
+    background-color:rgba(66, 255, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.over-6{
+    padding: 10px;
+    background-color: rgba(0, 71, 255, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+/*BMI------*/
+.BMI-content h1{
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+.BMI-content{
+    border: 1px solid salmon;
+    width: 670px;
+    height: 120px;
+    margin-left: 600px;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.BMI-calculator{
+    background-color: rgba(34, 34, 34, 1);
+    display: flex;
+    gap: 150px;
+    flex-direction: row;
+    height: 490px;
+    padding-top: 100px;
+    padding-left: 200px;
+    margin: 100px;
+}
+table{
+    height: 215px;
+    border-collapse: collapse;
+    padding: 0;
+    gap: 0;
+}
+thead th{
+    font-size: 1rem;
+    height: 50px;
+    width: 180px;
+    text-align: left;
+    padding: 5px;
+    font-weight: 200;
+}
+table, th,td{
+    border: 1px solid rgba(246, 242, 242, 0.1);
+}
+.row{
+    width: 180px;
+    height: 50px;
+    padding: 5px;
+}
+.calculate-btn{
+    font-size: 20px;
+    font-weight: 800;
+}
+.form{
+    width: 580px;
+    height: 170px;
+    display: grid;
+    gap: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+input, select{
+    border-radius: 10px;
+    border: none;
+    height: 48px;
+    background-color:rgba(255, 255, 255, 0.1) ;
+}
+.activity{
+    height: 48px;
+    width: 580px;
+}
