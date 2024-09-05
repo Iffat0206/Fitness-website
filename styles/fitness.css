@@ -149,7 +149,7 @@ img{
     font-size: 1.5rem;
 }
 /*change habit*/
-.change-habit, .run-an-extra,.train-and-exercise{
+.change-habit, .run-an-extra,.train-and-exercise,.meeting-team{
     display: flex;
     justify-content: center;
     margin: 80px;
@@ -439,8 +439,115 @@ input, select{
     border: none;
     height: 48px;
     background-color:rgba(255, 255, 255, 0.1) ;
+    padding-left: 5px;
+}
+option{
+    background-color: #424040;
 }
 .activity{
     height: 48px;
     width: 580px;
+    padding: 3px;
+}
+/*meet our team*/
+.meeting-team{
+    height: 600px;
+}
+.team{
+    width: 1060px;
+    height: 580px;
+    align-items: center;
+    text-align: center;
+}
+.team h1{
+    font-weight: 800;
+}
+.team-pic{
+    height: 400px;
+    width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin-top: 40px;
+    padding: 15px;
+    background-color:rgba(99, 98, 98, 0.2) ;
+    border-radius: 10px;
+}
+
+.pics-1{
+    background-image: url(../images/trainer1.png);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-weight: 800;
+    padding-left: 25px;
+    font-size: 12px;
+}
+.pics-2{
+    background-image: url(../images/trainer2.png);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-weight: 800;
+    padding-left: 25px;
+    font-size: 12px;
+}
+.pics-3{
+    background-image: url(../images/trainer3.png);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-weight: 800;
+    padding-left: 25px;
+    font-size: 12px;
+}
+.pics-4{
+    background-image: url(../images/trainer4.png);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-weight: 800;
+    padding-left: 25px;
+    font-size: 12px; 
+}
+.pics-5{
+    background-image: url(../images/trainer5.png);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-weight: 800;
+    padding-left: 25px;
+    font-size: 12px;
+}
+.pics-6{
+    background-image: url(../images/trainer6.png);
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-weight: 800;
+    padding-left: 25px;
+    font-size: 12px;
+}
+.pics-1 h5,.pics-2 h5,.pics-3 h5, .pics-4 h5, .pics-5 h5,.pics-6 h5, .pics-1 h1,.pics-2 h1,.pics-3 h1, .pics-4 h1, .pics-5 h1,.pics-6 h1{
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
 }
