@@ -185,7 +185,6 @@ img{
 }
 /*Run an extra*/
 .run-an-extra{
-    border: 1px solid rgba(230, 83, 60, 1);
     height: 375px;
 }
 .extra-box{
@@ -209,6 +208,7 @@ img{
 .box-heading{
     font-size: 3rem;
     margin-bottom: 0;
+    font-weight: 800;
 }
 .box-image{
     height: 19.5rem;
@@ -223,7 +223,6 @@ img{
 }
 /*Training and exercise*/
 .train-and-exercise{
-    border: 1px solid khaki;
     display: grid;
 }
 .train-content{
@@ -374,7 +373,6 @@ img{
     padding: 0;
 }
 .BMI-content{
-    border: 1px solid salmon;
     width: 670px;
     height: 120px;
     margin-left: 600px;
@@ -550,4 +548,47 @@ option{
     margin: 0;
     margin-bottom: 5px;
     padding: 0;
+}
+/*footer*/
+.footer{
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+}
+.footer-content{
+    width: 1056px;
+    height: 300px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    margin-left: 420px;
+    padding: 10px;
+    margin-top: 50px;
+    gap: 350px;
+}
+.brief{
+    text-align: left;
+}
+.brief-content{
+    font-size: 14px;
+    text-align: left;
+    margin-top: 30px;
+}
+.about-table{
+    text-align: left;
+    height: 250px;
+    width: 450px;
+}
+.about-table thead{
+    font-size: 50px;
+    font-weight: 800;
+}
+.about-table td{
+    padding: 5px;
+}
+.about-us table,.about-us th, .about-us td{
+    border: none;
 }
