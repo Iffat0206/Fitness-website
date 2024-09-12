@@ -35,13 +35,16 @@
     justify-content: space-around;
     align-items: center;
 }
+.hidden{
+    display: none;
+}
 .border{
     width: 132px;
     height: 43px;
     font-size: 2.25rem;
     font-weight: 750;
 }
-.nav ul{
+.nav .ul{
     display: flex;
     gap: 40px;
     list-style: none;
@@ -161,7 +164,7 @@ img{
     justify-content: center;
     margin: 80px;
     padding: 10px;
-    height: 652px;
+    height: 40.75rem;
     margin-top: 0;
 }
 .habit-box{
@@ -200,6 +203,7 @@ img{
     width: 1060px;
     height: 370px;
     background-color: rgba(34, 34, 34, 1);
+    border-radius: 10px;
 }
 .box-content{
     width: 50%;
@@ -584,29 +588,68 @@ option{
     text-align: left;
     margin-top: 30px;
 }
-.about-table{
+.about-us{
     text-align: left;
-    height: 250px;
-    width: 450px;
+    height: 300px;
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
 }
-.about-table thead{
-    font-size: 50px;
-    font-weight: 800;
-}
-.about-table td{
-    padding: 5px;
-}
-.about-us table,.about-us th, .about-us td{
-    border: none;
+.get-started1 h2, .get-started2 h2{
+    margin-bottom: 20px;
 }
 
 /*media for small device*/
 @media screen and (max-width:576px) {
+    body{
+        margin: 0;
+    }
+    .nav{
+        justify-content:space-between;
+        padding: 5px;
+        padding-right: 10px;
+    }
+    .nav .ul{
+        display: none;
+    }
+    .hidden{
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-image: url(../icon/icons8-menu-30.png);
+        appearance: none;
+        background-color: rgb(42, 41, 41);
+    }
+    .hidden option a:hover{
+        background-color: rgb(73, 71, 70);
+    }
+    .border-2{
+        width: 410px;
+        border: none;
+        margin: 0;
+        padding: 5px;
+    }
     .banner{
         flex-direction: column;
     }
+    .banner-tittle{
+        font-size: 3.2rem;
+    }
+    .details{
+        width: 360px;
+        height: 440px;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 3px;
+    }
+    .banner-content{
+        font-size: 0.9rem;
+        font-weight:300;
+        width: 250px;   
+    }
     .join-btn, .download-btn{
-        width: 180px;
+        width: 165px;
         margin: 5px;
     }
     img{
@@ -626,4 +669,248 @@ option{
         height: 30px;
         display: inline-block;
     }
+    /*habit*/
+    .change-habit{
+        width: 300px;
+        height: 1400px;
+        background-size: cover;
+        margin-bottom: 140px;
+        align-items: center;
+        margin: 20px;
+    }
+    .habit-content{
+        width: 280px;
+        height: 200px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .habit-box{
+        width: 400px;
+        text-align: center;
+        display: grid;
+        align-items: center;
+        gap: 0;
+    }
+    .heading-2{
+        font-weight: 800px;
+        width: 300px;
+        font-size: 2rem;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .habit-box {
+        flex-direction: column;
+    }
+    .habits{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .image{
+        margin-left: 40px;
+        width: 200px;
+        height: 200px;
+        border: 2px solid rgb(55, 52, 52);
+        border-radius: 50%;
+    }
+    /*run extra*/
+     .run-an-extra{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        height: 55rem;
+        margin: 0;
+        padding: 0;
+    }
+    .extra-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        width: 372px;
+        height: 650px;
+        background-color: rgba(34, 34, 34, 1);
+        align-items: start;
+        padding: 0;
+        margin-left: 0px;
+    }
+    .box-content{
+        width: 300px;
+        padding-left: 20px;
+    }
+    .box-content p{
+        font-size: 0.87rem;
+        word-spacing: 7px;
+    }
+    .box-heading{
+        font-size: 3rem;
+        margin: 0;
+        font-weight: 800;
+    }
+    .box-content button{
+        font-size: 1.12rem;
+        margin: 0;
+        margin-top: 10px;
+        width: 300px;
+        padding: 0;
+    }
+    .box-image{
+        height: 17rem;
+        width:21.5rem ;
+        padding: 0px;
+        padding-left: 15px;
+    }
+    .box-image img{
+        height: 100%;
+        border-radius: 18px;
+    }
+/*training*/
+.train-and-exercise{
+    display: grid;
+    padding: 5px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    width: 410px;
+    position: relative;
+    gap: 50px;
+}
+.train-content{
+    text-align: start;
+    width: 24rem;
+    height: 16rem;
+    position: absolute;
+    margin-left:0px;
+    padding-left: 15px;
+    /*border: 1px solid wheat;*/
+}
+.train-images{
+    grid-template-rows: auto auto;
+    width: 380px;
+    height: 350px;
+    /*border: 3px solid darkcyan;*/
+    display: grid;
+    position: relative;
+    top: 230px;
+    padding: 0;
+}
+.row-1{
+    display: grid;
+    padding: 0;
+    grid-template-columns: 12rem 12rem 16rem;
+}
+.row-2{
+    display: grid;
+    grid-template-columns: 12rem 12rem 22rem;
+}
+.image-3,.image-6{
+    display: none;
+}
+/*BMI*/
+    .BMI-content{
+        width: 370px;
+        height: 180px;
+        margin: 0;
+        padding-left: 20px;
+    } 
+    .BMI-calculator{
+        background-color: rgba(34, 34, 34, 1);
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        height: 850px;
+        padding: 8px;
+        margin: 0px;
+    }
+    .calculator button{
+        width: 250px;
+        gap: 0;
+    }
+    .form{
+        width: 380px;
+        height: 170px;
+        display: grid;
+        gap: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .form-info{
+        display: grid;
+        grid-template-columns: repeat(2,190px);
+        gap: 5px;
+    }
+    .activity{
+        width: 380px;
+    }
+    /*Meet our team*/
+    .meeting-team{
+        height: 1300px;
+        width: 400px;
+        margin: 0;
+        padding: 5px;
+    }
+    .team{
+        width: 380px;
+        height: 160px;
+        align-items: center;
+        text-align: center;
+    }
+    .team-pic{
+        height: 1050px;
+        width: 350px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 18px;
+        margin-top: 40px;
+        padding: 20px;
+    }
+    .pics-1, .pics-4{
+        display: none;
+    }
+    /*footer*/
+    .footer{
+        height: 900px;
+        width: 415px;
+        margin: 0;
+    }
+    .footer-content{
+        width: 396px;
+        height: 700px;
+        border-bottom: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin: 0px;
+        padding: 10px;
+        gap: 10px;
+    }
+    .footer-content p{
+        font-size: 17px;
+        word-spacing: 3px;
+        font-weight:medium;
+    }
+    .brief{
+        text-align: left;
+    }
+    .brief-content{
+        font-size: 14px;
+        text-align: left;
+        margin-top: 30px;
+    }
+    .about-us{
+        text-align: left;
+        height: 300px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .get-started1 h2, .get-started2 h2{
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+    
+    
 }
